@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Datos\ClDonante.cs" />
+    <Compile Include="Datos\ClPaciente.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
