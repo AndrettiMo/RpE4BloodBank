@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Configuration;
 using System.Data.SqlClient;
 
+
 namespace appE4BloodBank.Presentacion
 {
     public partial class frmLogin : Form
@@ -19,11 +20,16 @@ namespace appE4BloodBank.Presentacion
             InitializeComponent();
         }
 
-
         private void btnINICIAR_Click(object sender, EventArgs e)
         {
-            if tbUsuario.Text = "julian" and tbContraseña.text = "1234" Them 
-                
+            if (txtUsuario.Text == "Administrador" & txtContraseña.Text == "1234")
+            {
+                MessageBox.Show("lo lograste");
+            }
+            else
+            {
+                MessageBox.Show("intenta de nuevo tonto");
+            }
         }
     }
 }
