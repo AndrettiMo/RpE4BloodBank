@@ -21,5 +21,10 @@ namespace appE4BloodBank.Presentacion
         {
 
         }
+
+        private void frmInformacionBanco_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

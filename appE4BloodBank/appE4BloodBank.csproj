@@ -32,9 +32,16 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>appE4BloodBank.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data %281%29">
-      <HintPath>..\..\..\..\Downloads\MySql.Data (1).dll</HintPath>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Downloads\Musicaa\Design Dashboard Modern\BUNIFU UI\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -53,6 +60,7 @@
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Datos\ClDonante.cs" />
     <Compile Include="Datos\ClPaciente.cs" />
+    <Compile Include="Datos\clRegistrarDonante.cs" />
     <Compile Include="Datos\clTipoSangre.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -66,37 +74,46 @@
     <Compile Include="Presentacion\frmInformacionBanco.Designer.cs">
       <DependentUpon>frmInformacionBanco.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\frmInicio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentacion\frmInicio.Designer.cs">
-      <DependentUpon>frmInicio.cs</DependentUpon>
-    </Compile>
     <Compile Include="Presentacion\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentacion\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\frmRegistrar.cs">
+    <Compile Include="Presentacion\frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\frmRegistrar.Designer.cs">
-      <DependentUpon>frmRegistrar.cs</DependentUpon>
+    <Compile Include="Presentacion\frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmRegistrarDonante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmRegistrarDonante.Designer.cs">
+      <DependentUpon>frmRegistrarDonante.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Presentacion\frmInformacionBanco.resx">
       <DependentUpon>frmInformacionBanco.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\frmInicio.resx">
-      <DependentUpon>frmInicio.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\frmRegistrar.resx">
-      <DependentUpon>frmRegistrar.cs</DependentUpon>
+    <EmbeddedResource Include="Presentacion\frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmRegistrarDonante.resx">
+      <DependentUpon>frmRegistrarDonante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

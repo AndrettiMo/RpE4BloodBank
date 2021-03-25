@@ -53,7 +53,7 @@ namespace appE4BloodBank.Presentacion
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.panel1.Size = new System.Drawing.Size(803, 105);
+            this.panel1.Size = new System.Drawing.Size(821, 115);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -154,7 +154,7 @@ namespace appE4BloodBank.Presentacion
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(803, 329);
+            this.ClientSize = new System.Drawing.Size(821, 339);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.label2);

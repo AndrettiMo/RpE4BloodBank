@@ -24,11 +24,14 @@ namespace appE4BloodBank.Presentacion
         {
             if (txtUsuario.Text == "Administrador" & txtContraseña.Text == "1234")
             {
-                MessageBox.Show("lo lograste");
+                MessageBox.Show("BIENVENIDO");
+                Form inicio = new frmMenu();
+                inicio.Show();
+            
             }
             else
             {
-                MessageBox.Show("intenta de nuevo tonto");
+                MessageBox.Show("Usuario o contraseña incorrecta");
             }
         }
     }
