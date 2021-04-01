@@ -45,7 +45,7 @@ namespace appE4BloodBank.Presentacion
             // 
             this.richTextBox1.Location = new System.Drawing.Point(178, 108);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(268, 163);
+            this.richTextBox1.Size = new System.Drawing.Size(334, 253);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
             // 

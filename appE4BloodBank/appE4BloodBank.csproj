@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Datos\ClDonante.cs" />
+    <Compile Include="Datos\clFunciones.cs" />
     <Compile Include="Datos\ClPaciente.cs" />
     <Compile Include="Datos\clRegistrarDonante.cs" />
     <Compile Include="Datos\clTipoSangre.cs" />

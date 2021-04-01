@@ -34,5 +34,10 @@ namespace appE4BloodBank.Presentacion
                 MessageBox.Show("Usuario o contraseña incorrecta");
             }
         }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

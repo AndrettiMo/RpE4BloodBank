@@ -43,7 +43,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtFecha = new System.Windows.Forms.TextBox();
             this.txtPeso = new System.Windows.Forms.TextBox();
             this.txtRH = new System.Windows.Forms.TextBox();
             this.txtTipoSangre = new System.Windows.Forms.TextBox();
@@ -52,6 +51,8 @@
             this.cmbGenero = new System.Windows.Forms.ComboBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.txtFecha = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,7 +85,7 @@
             // 
             this.txtApellido.Location = new System.Drawing.Point(181, 53);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(100, 20);
+            this.txtApellido.Size = new System.Drawing.Size(152, 20);
             this.txtApellido.TabIndex = 3;
             // 
             // label3
@@ -100,7 +101,7 @@
             // 
             this.txtDocumento.Location = new System.Drawing.Point(181, 81);
             this.txtDocumento.Name = "txtDocumento";
-            this.txtDocumento.Size = new System.Drawing.Size(100, 20);
+            this.txtDocumento.Size = new System.Drawing.Size(152, 20);
             this.txtDocumento.TabIndex = 5;
             // 
             // label4
@@ -152,7 +153,7 @@
             // 
             this.txtEdad.Location = new System.Drawing.Point(181, 107);
             this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(100, 20);
+            this.txtEdad.Size = new System.Drawing.Size(152, 20);
             this.txtEdad.TabIndex = 11;
             // 
             // label9
@@ -182,18 +183,11 @@
             this.label11.TabIndex = 14;
             this.label11.Text = "Telefono";
             // 
-            // txtFecha
-            // 
-            this.txtFecha.Location = new System.Drawing.Point(181, 144);
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(100, 20);
-            this.txtFecha.TabIndex = 15;
-            // 
             // txtPeso
             // 
             this.txtPeso.Location = new System.Drawing.Point(181, 175);
             this.txtPeso.Name = "txtPeso";
-            this.txtPeso.Size = new System.Drawing.Size(100, 20);
+            this.txtPeso.Size = new System.Drawing.Size(152, 20);
             this.txtPeso.TabIndex = 16;
             // 
             // txtRH
@@ -214,14 +208,14 @@
             // 
             this.txtTelefono.Location = new System.Drawing.Point(181, 289);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(100, 20);
+            this.txtTelefono.Size = new System.Drawing.Size(152, 20);
             this.txtTelefono.TabIndex = 20;
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(181, 315);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(100, 20);
+            this.txtEmail.Size = new System.Drawing.Size(152, 20);
             this.txtEmail.TabIndex = 21;
             // 
             // cmbGenero
@@ -237,7 +231,7 @@
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(146, 363);
+            this.btnRegistrar.Location = new System.Drawing.Point(34, 409);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(75, 23);
             this.btnRegistrar.TabIndex = 23;
@@ -248,16 +242,35 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(333, 47);
+            this.dataGridView1.Location = new System.Drawing.Point(467, 21);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(344, 285);
+            this.dataGridView1.Size = new System.Drawing.Size(516, 389);
             this.dataGridView1.TabIndex = 24;
             // 
-            // frmRegistrar
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(115, 409);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Conectar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtFecha
+            // 
+            this.txtFecha.Location = new System.Drawing.Point(181, 144);
+            this.txtFecha.Name = "txtFecha";
+            this.txtFecha.Size = new System.Drawing.Size(152, 20);
+            this.txtFecha.TabIndex = 27;
+            // 
+            // frmRegistrarDonante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(689, 451);
+            this.ClientSize = new System.Drawing.Size(995, 492);
+            this.Controls.Add(this.txtFecha);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.cmbGenero);
@@ -266,7 +279,6 @@
             this.Controls.Add(this.txtTipoSangre);
             this.Controls.Add(this.txtRH);
             this.Controls.Add(this.txtPeso);
-            this.Controls.Add(this.txtFecha);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -282,7 +294,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNombre);
-            this.Name = "frmRegistrar";
+            this.Name = "frmRegistrarDonante";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -306,7 +318,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.TextBox txtPeso;
         private System.Windows.Forms.TextBox txtRH;
         private System.Windows.Forms.TextBox txtTipoSangre;
@@ -315,5 +326,7 @@
         private System.Windows.Forms.ComboBox cmbGenero;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtFecha;
     }
 }
