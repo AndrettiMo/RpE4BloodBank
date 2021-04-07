@@ -11,49 +11,50 @@ using MySql.Data.MySqlClient;
 namespace appE4BoodBank.Datos
 {
     class clConexion
+
     {
-        public static MySqlConnection crearConexion()
+        MySqlConnection objConexion = null;
+
+
+        public clConexion()
         {
-         MySqlConnection objConexion = new MySqlConnection("server=localhost; user id=root;Port=3306;database=bdBanco;Password=1234");
-        objConexion.Open();
-            return objConexion;
+            try
+            {
+                objConexion = new MySqlConnection("server=localhost; user id=root;Port=3306;database=bdbanco;Password=1234");
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message);
+            }
+
         }
-    /*     MySqlConnection objConexion = null;
-         public clConexion()
-         {
-             try
-             {
-                 objConexion = new MySqlConnection("server=localhost; user id=root;Port=3306;database=bdBanco;Password=1234");
-             }
-             catch (Exception error)
-             {
-                 MessageBox.Show(error.Message);
-             }
-
-         }
-
 
 
          public DataTable mtdDesconectado(string consulta)
-         {
-             objConexion.Open();
-             MySqlDataAdapter adaptador = new MySqlDataAdapter(consulta, objConexion);
-             DataTable tblDatos = new DataTable();
-             adaptador.Fill(tblDatos);
-             objConexion.Close();
-             return tblDatos;
-         }*/
-    /*
-            public int mtdConectado(string consulta)
-            {
-                objConexion.Open();
-                MySqlCommand comando = new MySqlCommand(consulta, objConexion);
-                int filasAfectadas = comando.ExecuteNonQuery();
-                objConexion.Close();
-                return filasAfectadas;
-            }
-            */
+        {
+            objConexion.Open();
+            MySqlDataAdapter adaptador = new MySqlDataAdapter(consulta, objConexion);
+            DataTable tblDatos = new DataTable();
+            adaptador.Fill(tblDatos);
+            objConexion.Close();
+            return tblDatos;
+        }
+        
+                public int mtdConectado(string consulta)
+                {
+                    objConexion.Open();
+                    MySqlCommand comando = new MySqlCommand(consulta, objConexion);
+                    int filasAfectadas = comando.ExecuteNonQuery();
+                    objConexion.Close();
+                    return filasAfectadas;
+                }
 
 
-}
+
+
+        }
+      
+
+
+    
 }

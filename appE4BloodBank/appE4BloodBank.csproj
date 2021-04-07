@@ -59,7 +59,7 @@
   <ItemGroup>
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Datos\ClDonante.cs" />
-    <Compile Include="Datos\clFunciones.cs" />
+    <Compile Include="Datos\clMostrar.cs" />
     <Compile Include="Datos\ClPaciente.cs" />
     <Compile Include="Datos\clRegistrarDonante.cs" />
     <Compile Include="Datos\clTipoSangre.cs" />
@@ -69,11 +69,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\frmInformacionBanco.cs">
+    <Compile Include="Presentacion\frmBolsaSangre.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\frmInformacionBanco.Designer.cs">
-      <DependentUpon>frmInformacionBanco.cs</DependentUpon>
+    <Compile Include="Presentacion\frmBolsaSangre.Designer.cs">
+      <DependentUpon>frmBolsaSangre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmRecoleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmRecoleccion.Designer.cs">
+      <DependentUpon>frmRecoleccion.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\frmLogin.cs">
       <SubType>Form</SubType>
@@ -86,6 +92,12 @@
     </Compile>
     <Compile Include="Presentacion\frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\frmPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmPaciente.Designer.cs">
+      <DependentUpon>frmPaciente.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\frmPrincipal.cs">
       <SubType>Form</SubType>
@@ -101,14 +113,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Presentacion\frmInformacionBanco.resx">
-      <DependentUpon>frmInformacionBanco.cs</DependentUpon>
+    <EmbeddedResource Include="Presentacion\frmBolsaSangre.resx">
+      <DependentUpon>frmBolsaSangre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmRecoleccion.resx">
+      <DependentUpon>frmRecoleccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmPaciente.resx">
+      <DependentUpon>frmPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>

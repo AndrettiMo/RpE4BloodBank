@@ -53,5 +53,11 @@ namespace appE4BloodBank.Presentacion
             login.Show();
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form Registrar = new frmMenu();
+            Registrar.Show();
+        }
     }
 }

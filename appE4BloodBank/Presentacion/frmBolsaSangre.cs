@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace appE4BloodBank.Presentacion
 {
-    public partial class frmInformacionBanco : Form
+    public partial class frmBolsaSangre : Form
     {
-        public frmInformacionBanco()
+        public frmBolsaSangre()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmInformacionBanco_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

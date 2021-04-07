@@ -25,8 +25,8 @@ namespace appE4BloodBank.Presentacion
             if (txtUsuario.Text == "Administrador" & txtContraseña.Text == "1234")
             {
                 MessageBox.Show("BIENVENIDO");
-                Form inicio = new frmMenu();
-                inicio.Show();
+                Form Principal = new frmPrincipal();
+                Principal.Show();
             
             }
             else

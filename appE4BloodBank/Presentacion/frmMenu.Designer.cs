@@ -29,88 +29,85 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.registrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.donanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pacienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.personalMedicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.donantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registrarToolStripMenuItem,
-            this.listasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(656, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1006, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // registrarToolStripMenuItem
+            // button1
             // 
-            this.registrarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.donanteToolStripMenuItem,
-            this.pacienteToolStripMenuItem,
-            this.personalMedicoToolStripMenuItem});
-            this.registrarToolStripMenuItem.Name = "registrarToolStripMenuItem";
-            this.registrarToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.registrarToolStripMenuItem.Text = "Registrar";
+            this.button1.Location = new System.Drawing.Point(96, 183);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(115, 65);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Donante";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // donanteToolStripMenuItem
+            // button2
             // 
-            this.donanteToolStripMenuItem.Name = "donanteToolStripMenuItem";
-            this.donanteToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.donanteToolStripMenuItem.Text = "Donante";
-            this.donanteToolStripMenuItem.Click += new System.EventHandler(this.donanteToolStripMenuItem_Click);
+            this.button2.Location = new System.Drawing.Point(273, 183);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(104, 65);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Paciente";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // pacienteToolStripMenuItem
+            // button3
             // 
-            this.pacienteToolStripMenuItem.Name = "pacienteToolStripMenuItem";
-            this.pacienteToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.pacienteToolStripMenuItem.Text = "Paciente";
+            this.button3.Location = new System.Drawing.Point(625, 183);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(134, 65);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Informacion bolsa de sangre";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // personalMedicoToolStripMenuItem
+            // label2
             // 
-            this.personalMedicoToolStripMenuItem.Name = "personalMedicoToolStripMenuItem";
-            this.personalMedicoToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.personalMedicoToolStripMenuItem.Text = "Personal medico";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(146, 80);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(545, 33);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Elige el tipo de datos quieres registrar";
             // 
-            // listasToolStripMenuItem
+            // button4
             // 
-            this.listasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.donantesToolStripMenuItem,
-            this.pacientesToolStripMenuItem});
-            this.listasToolStripMenuItem.Name = "listasToolStripMenuItem";
-            this.listasToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.listasToolStripMenuItem.Text = "Listas";
-            // 
-            // donantesToolStripMenuItem
-            // 
-            this.donantesToolStripMenuItem.Name = "donantesToolStripMenuItem";
-            this.donantesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.donantesToolStripMenuItem.Text = "Donantes";
-            // 
-            // pacientesToolStripMenuItem
-            // 
-            this.pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
-            this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.pacientesToolStripMenuItem.Text = "Pacientes";
+            this.button4.Location = new System.Drawing.Point(441, 183);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(134, 65);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "Informacion recoleccion";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(656, 382);
+            this.ClientSize = new System.Drawing.Size(1006, 438);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMenu";
             this.Text = "frmMenu";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,12 +116,10 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem registrarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem donanteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pacienteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem personalMedicoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem donantesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pacientesToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button4;
     }
 }
