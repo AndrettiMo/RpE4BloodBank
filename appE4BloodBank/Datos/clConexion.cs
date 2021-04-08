@@ -20,7 +20,7 @@ namespace appE4BoodBank.Datos
         {
             try
             {
-                objConexion = new MySqlConnection("server=localhost; user id=root;Port=3306;database=bdbanco;Password=1234");
+                objConexion = new MySqlConnection("server=localhost; user id=root;Port=3306;database=bdbanco;Password=1002727239");
             }
             catch (Exception error)
             {

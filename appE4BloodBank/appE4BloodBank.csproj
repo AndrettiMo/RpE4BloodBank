@@ -37,7 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\..\Downloads\Musicaa\Design Dashboard Modern\BUNIFU UI\Bunifu_UI_v1.5.3.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -62,6 +62,7 @@
     <Compile Include="Datos\clMostrar.cs" />
     <Compile Include="Datos\ClPaciente.cs" />
     <Compile Include="Datos\clRegistrarDonante.cs" />
+    <Compile Include="Datos\clRegistrarPacienteG.cs" />
     <Compile Include="Datos\clTipoSangre.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -111,6 +112,12 @@
     <Compile Include="Presentacion\frmRegistrarDonante.Designer.cs">
       <DependentUpon>frmRegistrarDonante.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\frmRegistrarPacienteG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmRegistrarPacienteG.Designer.cs">
+      <DependentUpon>frmRegistrarPacienteG.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Presentacion\frmBolsaSangre.resx">
@@ -133,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmRegistrarDonante.resx">
       <DependentUpon>frmRegistrarDonante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmRegistrarPacienteG.resx">
+      <DependentUpon>frmRegistrarPacienteG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
