@@ -10,34 +10,34 @@ using System.Windows.Forms;
 
 namespace appE4BloodBank.Presentacion
 {
-    public partial class frmPrincipal : Form
+    public partial class frmInicio : Form
     {
-        public frmPrincipal()
+        public frmInicio()
         {
             InitializeComponent();
         }
 
-        private void frmPrincipal_Load(object sender, EventArgs e)
+        private void btnRegistrar_Click(object sender, EventArgs e)
         {
-
+            Form Registrar = new frmMenuRegistrar();
+            Registrar.Show();
         }
-
-        private void Cerrar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
 
         private void Minimizar_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }
-             
+
         private void Maximizar_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
             Maximizar.Visible = false;
             Restaurar.Visible = true;
+        }
+
+        private void Cerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void Restaurar_Click(object sender, EventArgs e)
@@ -47,22 +47,10 @@ namespace appE4BloodBank.Presentacion
             Restaurar.Visible = false;
         }
 
-               private void bunifuFlatButton7_Click(object sender, EventArgs e)
-        {
-            Form login = new frmLogin();
-            login.Show();
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            Form Registrar = new frmMenuRegistrar();
-            Registrar.Show();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
+            Form Usuario = new frmPrincipal();
+            Usuario.Show();
         }
     }
 }

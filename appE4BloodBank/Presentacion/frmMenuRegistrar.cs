@@ -10,22 +10,14 @@ using System.Windows.Forms;
 
 namespace appE4BloodBank.Presentacion
 {
-    public partial class frmMenu : Form
+    public partial class frmMenuRegistrar : Form
     {
-        public frmMenu()
+        public frmMenuRegistrar()
         {
             InitializeComponent();
         }
 
-        private void donanteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {

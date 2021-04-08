@@ -36,6 +36,9 @@
     <StartupObject>appE4BloodBank.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autenticación">
+      <HintPath>..\..\..\..\..\Downloads\Musica hoyyy\Autenticación.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\..\..\..\Downloads\Musicaa\Design Dashboard Modern\BUNIFU UI\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
@@ -75,6 +78,12 @@
     <Compile Include="Presentacion\frmBolsaSangre.Designer.cs">
       <DependentUpon>frmBolsaSangre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\frmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\frmInicio.Designer.cs">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\frmRecoleccion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,11 +96,11 @@
     <Compile Include="Presentacion\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\frmMenu.cs">
+    <Compile Include="Presentacion\frmMenuRegistrar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\frmMenu.Designer.cs">
-      <DependentUpon>frmMenu.cs</DependentUpon>
+    <Compile Include="Presentacion\frmMenuRegistrar.Designer.cs">
+      <DependentUpon>frmMenuRegistrar.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\frmPaciente.cs">
       <SubType>Form</SubType>
@@ -116,14 +125,17 @@
     <EmbeddedResource Include="Presentacion\frmBolsaSangre.resx">
       <DependentUpon>frmBolsaSangre.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\frmInicio.resx">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmRecoleccion.resx">
       <DependentUpon>frmRecoleccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\frmMenu.resx">
-      <DependentUpon>frmMenu.cs</DependentUpon>
+    <EmbeddedResource Include="Presentacion\frmMenuRegistrar.resx">
+      <DependentUpon>frmMenuRegistrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\frmPaciente.resx">
       <DependentUpon>frmPaciente.cs</DependentUpon>
